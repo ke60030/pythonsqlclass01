@@ -22,6 +22,21 @@ CREATE TABLE IF NOT EXISTS artists(
 SELECT *
 FROM artists;
 
+CREATE TABLE IF NOT EXISTS city(
+	id SERIAL,
+	name VARCHAR(30),
+	popular INT,
+	PRIMARY KEY (id)
+);
+
+SELECT *
+FROM city;
+
+
+
+
+
+
 
 
 
