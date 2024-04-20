@@ -7,7 +7,7 @@ st.write(st.session_state)
 number:int = st.slider("數值",min_value=1,max_value=10,value=5,key='mySlider')
 #st.write("加入slider後的session_state",st.session_state)
 
-col1, buff, col2= st.columns({1, 0.5, 3})
+
 
 next = st.button("下一個選項")
 if next:
@@ -17,6 +17,8 @@ if next:
         st.session_state.radio_option = "c"
     else:
         st.session_state.radio_option = "a"
+
+col1, buff, col2= st.columns({1, 0.5, 3})
 
 with col1:
     option_names = ["a", "b", "c"]
@@ -29,5 +31,6 @@ with col2:
     elif option == 'b':
         st.write("您選擇的是'b' :bear:")
     elif option == 'c':
-        st.write("您選擇的是'c' :car:")
+        st.write("您選擇的是'c' :shark:")
+
 
