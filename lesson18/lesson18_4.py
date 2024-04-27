@@ -6,7 +6,7 @@ load_dotenv()
 
 @st.cache_resource
 def get_sarea()->tuple:
-    conn = psycopg2.connect(os.environ['POSTGRE_PASSWORD1'])
+    conn = psycopg2.connect(os.environ['POSTGRE_PASSWORD_taipei'])
     with conn:
         with conn.cursor() as cursor:
             #取出最新日期各站點資料
